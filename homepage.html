@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+    <script type="module" src="./homepage.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container flex p-3 items-center justify-between container1">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="#">Home</a></li>
+                
+                <li><a href="#">About</a></li>
+                <li><a href="#">My Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><h1 class="bg-blue-400 w-[40px] h-[40px] text-center p-1 text-white rounded-3xl " id="User"></h1></li>
+                <li><img class="w-[40px]" id="logout" src="img/log-out_10024482.png" alt=""></li>
+
+                 
+                
+                
+            </ul>
+            
+            <h1 class="logo font-serif">Blog</h1>
+        </div>
+    </nav>
+    <button id="add_blog" class="w-[60px] pen" ><img src="img/ballpoint_7726983.png" alt=""></button>
+    <div class="w-full p-3 min-h-[87vh] flex flex-col items-center gap-6 bg-blue-200" id="box_add">
+        <div class="box w-[90%]  p-4 bg-gray-400  mt-3 rounded  ">
+            <div class="w-full h-full p-4 flex flex-col items-center rounded bg-blue-100 ">
+                <p><h2 class="font-bold">Daniyal :</h2> Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sint, temporibus cupiditate nesciunt velit doloribus quia molestias harum! Fugiat repellat quia consequatur veritatis eos iure quas unde, amet accusantium recusandae quidem tempore perspiciatis cupiditate nesciunt aperiam odio fuga a aut deserunt culpa nulla eaque fugit maiores temporibus! Necessitatibus blanditiis saepe adipisci. Minus, blanditiis ullam reprehenderit sunt dolores, mollitia sed, ratione culpa ex dolore consectetur tenetur alias inventore. Fuga sapiente, saepe magni officiis, dolorum qui, ratione reprehenderit consectetur neque debitis necessitatibus. Quae obcaecati, recusandae, consequatur aspernatur magnam adipisci, possimus reiciendis debitis neque voluptas nobis harum tenetur tempora voluptatibus temporibus consequuntur? Sit?</p>
+                <button id="del" class="w-[20%] h-[6vh] rounded  bg-gray-700 text-white"> delet </button>
+              </div>
+        </div>
+    </div>
+    <!-- <h1>Welcome to the Homepage</h1>
+    <div>First Name: <span id="loggedUserFName"></span></div>
+    <div>Last Name: <span id="loggedUserLName"></span></div>
+    <div>Email: <span id="loggedUserEmail"></span></div>
+    <button id="logout">Logout</button> -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
